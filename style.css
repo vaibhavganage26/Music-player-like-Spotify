@@ -1,0 +1,277 @@
+/* Navbar content */
+
+#navbar{
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: rgb(182, 116, 245);
+    display: grid;
+    position: relative;
+    justify-content: center;
+    grid-gap: 34rem;
+    grid-template-areas: 
+    'logo nav search';
+
+}
+#nav a{
+    text-decoration: none;
+    margin-left: 50%;
+    color: black;
+    margin-right: 25%;
+    font-weight: 25px;
+    font-size:2rem;
+    cursor: pointer;
+}
+#nav a:hover{
+    background-color: whitesmoke;
+    transform: scale(1.01);
+    font-weight: bolder;
+    border-radius: 10%;
+}
+
+#nav{
+    font-weight: bolder;
+    cursor: pointer;
+    grid-area: nav;
+}
+/* logo */
+
+#logo img{
+    border-radius: 50%;
+    height: 50px;
+    margin-left: 10px;
+    width: 50px;
+    left: 20px;
+    transition: all 0.4s ease-in-out;
+
+}
+#logo img:hover{
+    transform: rotate(360deg);
+
+}
+#logo{
+    grid-area: logo;
+}
+
+/* Search bar */
+
+
+.search-bar{
+    width: 100%;
+    background: white;
+    opacity: 0.6;
+    margin-top: 8px;
+    align-items: center;
+    display: flex;
+    border-radius: 50px;
+    padding: 4px 10px;
+}
+.search-bar input{
+    border: none;
+    flex: 1;
+    background: transparent;
+    outline: none;
+}
+::placeholder{
+    color: black;
+    font-weight: bolder;
+}
+.search-bar button img{
+    height: 20px;
+    border-radius: 50%;
+}
+.search-bar button{
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+#searchbox{
+    margin-right: 27px;
+    grid-area: search;
+}
+
+/* Main content Table */
+#container::before{
+    content: "";
+    background: url('https://th.bing.com/th/id/OIP.TZPJRSWNFNecaXxr4ii4LQHaE8?w=286&h=181&c=7&r=0&o=5&dpr=1.25&pid=1.7') no-repeat center center/cover;
+    position: absolute;
+    margin: 0px -28px;
+    height: 100%;
+    width: 103%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.6;
+}
+#first table{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    text-align: center;
+    align-items: center;
+    backdrop-filter: blur(40px);
+    border-collapse: collapse;
+}
+table caption{
+    font-size: 60px;
+    font-weight: bolder;
+}
+table,td{
+    padding: 10px;
+}
+
+th{
+    padding: 10px;
+    font-size: 25px;
+    background-color: aquamarine;
+}
+/* rating  */
+.rating input{
+    cursor: pointer;
+}
+
+/* section of artist */
+
+#art::before{
+    content: "";
+    background: url('https://th.bing.com/th/id/R.aad3ed647f26d3a8ace004ca768896e3?rik=1EUonFHJdCOO3A&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fd%2fd%2f4%2f1203125-widescreen-desktop-backgrounds-music-1999x1109-for-android-50.jpg&ehk=dIQNx0rVkfTcNrJ5l631naprbOoC8JHQ8gCh3bSfXZ0%3d&risl=&pid=ImgRaw&r=0') no-repeat center center/cover;
+    position: absolute;
+    margin-top: -30px;
+    height: 140%;
+    width: 101%;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.6;
+}
+#second table{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+    text-align: center;
+    align-items: center;
+    backdrop-filter: blur(40px);
+    border-collapse: collapse;
+}
+
+/* footer */
+.foot{
+    background-color: rgb(70, 102, 121);
+    color: black;
+    text-align: center;
+    margin-top: 70px;
+}
+
+/* rating star */
+/* #rating{
+    direction: rtl;
+    display: none;
+}
+#rating label{
+    display: inline-block;
+    width: 130px;
+    position: absolute;
+    cursor: pointer;
+    top: 160px;
+}
+#rating input::before{
+    content: "\2605";
+    position:absolute ;
+    font-size: 30px;
+    display: inline-block;
+    color: yellow;
+}
+#rating input::after{
+    content: "\2605";
+    position:absolute ;
+    font-size: 30px;
+    display: inline-block;
+    color: yellow;
+    opacity: 0;
+}
+.rating input::before{
+    content: "\2605";
+    position:absolute ;
+    font-size: 30px;
+    display: inline-block;
+    color: yellow;
+}
+.rating input::after{
+    content: "\2605";
+    position:absolute ;
+    font-size: 30px;
+    display: inline-block;
+    color: yellow;
+    opacity: 0;
+}
+.rating input:hover::after,
+.rating input:hover ~::after,
+.rating input:checked ~::after{
+    opacity: 1;
+} */
+
+/* common selector */
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+ table img{
+    height: 40px;
+    width: 40px;
+    border-radius: 30%;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+table img:hover{
+    transform: scale(1.4);
+}
+
+
+
+/* Responsive for iphone XR */
+@media only screen and (min-width:390px) and (max-width:415px) {
+    #navbar{
+            width: 156%;
+
+            grid-gap: 8rem;
+    }
+    .search-bar {
+        width: 92%;
+    }
+    #container::before{
+        height: 124%;
+        width: 164%;
+    }
+    #art::before{
+        height: 113%;
+        width: 158%;
+        margin-top: -9px;
+    }  
+    #second table{
+        margin-left: 31px;
+    }
+}
+@media only screen and (min-width:1000px) and (max-width:1501px) {
+    #navbar{
+        grid-gap: 21rem;
+}
+.search-bar {
+    width: 103%;
+}
+#container::before{
+    height: 105%;
+    width: 103%;
+}
+#art::before{
+    height: 113%;
+    width: 103%;
+    margin-top: -9px;
+}  
+#second table{
+    margin-left: 142px;
+    margin-top: 80px;
+}
+}
